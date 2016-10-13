@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width">
+        <title>MARIA GUBINA</title>
+       
+          <link rel="stylesheet" href="styles/styleflex.css">
+          <script src="js/script.js"></script>
+        <script src="js/jquery-min.js"></script>
+            <script>
+                $(document).ready(function() {
+                    $('.user-block').click(function(){
+                    $('.modal-content').slideToggle();
+                });
+                    
+                    
+                   $('.close img').click(function() {
+                        $('.modal-content').slideUp();
+                    });
+                }); 
+        
+            </script>
+    </head>
+    <body class="home">
+        <header class="main_header">
+            <nav class='main_nav'>
+                    <a href="#" class="active header">Главная</a>
+                    <a href="#" class="header">Фотогаллерея</a>
+                    <a href="..\resume\resume.html" class="header">Контакты</a>
+                    <a href="#" class="user-block header"><img src="image/door_in.png" alt="" class="door">Вход</a>
+            </nav>
+        </header>
+        <div class='myjob'><h1> ~ <span>A</span>Мои работы ~</h1></div>
+       <div class="content">
+               <figure class="gallery">
+                   <img src="image/soupbubbles.jpg" alt="" width="300" height="207.4">
+                   <img src="image/flowers.jpg" alt="" width="300" height="207.4">
+                   <img src="image/flowers1.jpg" alt="" width="300" height="207.4">
+               </figure>
+      </div>
+    
+        <footer class="main-footer">
+    
+        <section class="social">
+          <a href="#" class="ok">Одноклассники</a>
+          <a href="#" class="vk">Вконтакте</a>
+          <a href="#" class="fb">Фейсбук</a>
+          <a href="#" class="inst">Инстаграм</a>
+        </section>
+            
+        </footer>
+          <div class="copyright"> 
+                <a href='#'>Kirichenk©</a>
+           </div>
+        <!-- **** Разметка модального окна **** -->
+        <div class="modal-content">
+        <h2 class="modal-content-title">Личный кабинет</h2>
+      <p>Введите пожалуйста свой логин и пароль.</p>
+      <form class="login-form" action="/echo" method="post">
+        <input type="text" class="icon-user" name="login" placeholder="Логин" required>
+        <input type="password" class="icon-password" name="password" placeholder="Пароль" required><br>
+        
+        
+        <a href="#" class="restore btn">Я забыл пароль!</a><br>
+        <button type="submit" class="btn">Войти</button>
+          <!--<button type="submit" class="btn close">Закрыть<img src="image/delete_16x16.png" alt=""></button> -->
+         <div class='close'><img src="image/delete_16x16.png" alt="" class="close"></div>
+      </form>
+            
+            
+
+    </div>
+        
+    </body>
+</html>
